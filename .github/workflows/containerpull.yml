@@ -1,0 +1,12 @@
+name: get container package metadata and version metadata 
+on:
+  push:
+   
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    name: docker pull
+    run: |
+    echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u dwivedine --password-stdin
+    docker pull ghcr.io/sldfkjafsdfd/privaterepo/httpd:latest
