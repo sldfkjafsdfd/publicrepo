@@ -1,4 +1,4 @@
-name: get package metadata and version metadata 
+name: get package metadata and version metadata
 on:
   push:
    
