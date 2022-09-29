@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: curl to get package metadata using github token
-        run:  curl --header "Authorization:Bearer ${{ secrets.GITHUB_TOKEN }}" --location --request GET "https://nuget.pkg.github.com/sldfkjafsdfd/testnew/index.json"
+        run:  curl --header "Authorization:Bearer ${{ secrets.GITHUB_TOKEN }}" --location --request GET "https://nuget.pkg.github.com/sldfkjafsdfd/TestInstall/index.json"
       - name: curl to get package version metadata using github token
-        run:  curl --header "Authorization:Bearer ${{ secrets.GITHUB_TOKEN }}" --location --request GET "https://nuget.pkg.github.com/sldfkjafsdfd/testnew/4.9.0.json"
+        run:  curl --header "Authorization:Bearer ${{ secrets.GITHUB_TOKEN }}" --location --request GET "https://nuget.pkg.github.com/sldfkjafsdfd/TestInstall/1.0.0.json"
       
