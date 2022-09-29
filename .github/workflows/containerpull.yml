@@ -8,5 +8,5 @@ jobs:
     steps:
       - name: docker pull
         run: |
-        echo ${{ secrets.GITHUB_TOKEN }} | docker login ghcr.io -u dwivedine --password-stdin
-        docker pull ghcr.io/sldfkjafsdfd/privaterepo/httpd:latest
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u dwivedine --password-stdin
+          docker pull ghcr.io/sldfkjafsdfd/privaterepo/httpd:latest
